@@ -1691,14 +1691,15 @@ int main(int argc, char **argv)
   {
     uint8_t ibuf[576*2*2];
     int16_t word;
-    int dword;
+    int fmtheaderlen;
+    uint16_t formattag;
 
     if (getc(fpi) != 'R') fmterr(1);
     if (getc(fpi) != 'I') fmterr(1);
     if (getc(fpi) != 'F') fmterr(1);
     if (getc(fpi) != 'F') fmterr(1);
 
-    dword = fread_int(fpi);
+    ignoreReturnValue(fread(ibuf,1,4,fpi));
 
     if (getc(fpi) != 'W') fmterr(2);
     if (getc(fpi) != 'A') fmterr(2);
@@ -1709,10 +1710,12 @@ int main(int argc, char **argv)
     if (getc(fpi) != 't') fmterr(2);
     if (getc(fpi) != ' ') fmterr(2);
 
-    dword = fread_int(fpi);
-    ignoreReturnValue(fread(ibuf,dword,1,fpi));
+    fmtheaderlen = fread_int(fpi);
+    if (fmtheaderlen < 16 || fmtheaderlen > sizeof ibuf) fmterr(3);
+    ignoreReturnValue(fread(ibuf,fmtheaderlen,1,fpi));
 
-    if (extract_short(&ibuf[0]) != 1) {
+    formattag = extract_short(&ibuf[0]);
+    if (formattag != 1 && !(formattag == 0xFFFE && extract_short(&ibuf[24]) == 1)) {
       fprintf(stderr,"Error: Only PCM is supported.\n");
       exit(-1);
     }
