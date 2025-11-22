@@ -262,9 +262,11 @@ This project uses the following third-party library:
 ## License
 
 The software is distributed under the Boost Software License, Version
-1.0. See accompanying file LICENSE.txt or copy at :
-http://www.boost.org/LICENSE_1_0.txt. Contributions to this project
-are accepted under the same license.
+1.0. See accompanying file [LICENSE.txt](./LICENSE.txt) or copy at :
+[http://www.boost.org/LICENSE_1_0.txt](http://www.boost.org/LICENSE_1_0.txt). Contributions
+to this project from individual developers and small organizations are
+accepted under the same license. For contributions from corporate
+users, please refer to [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 #### Building a Sustainable Future for Our Open Source Projects
 
@@ -322,13 +324,14 @@ and maintain comparable products. This project specifically requests
 companies profiting from our deliverables to contribute to maintaining
 the project.
 
-To be clear, this is not a request for charity; it is a proposal to
-manage the operational risk. This is a systemic challenge originating
-not from the developers, but from within the organizations that
-consume and whose business continuity depends on FOSS. When a project
-is abandoned due to this unresolved issue, the primary victims are not
-the developers-who move on to other opportunities-but the companies
-who built their products on an unmaintained foundation.
+To be clear, **this is not a request for charity**; it is a proposal
+to manage the operational risk. This is a systemic challenge
+originating not from the developers, but from within the organizations
+that consume and whose business continuity depends on FOSS. Should a
+project be abandoned due to this unresolved problem, **the primary
+victims will be you, the company** that built its product on top of an
+unmaintained foundation, not the developers who can move on to other
+opportunities.
 
 #### Our Request for Support
 
@@ -352,13 +355,13 @@ with an older version as a reason to decline support, while
 simultaneously benefiting from the ongoing development that produces
 newer, better versions, is a logically inconsistent position.
 
-This support is not intended to fund work for any single company, but
-to sustain the project as a shared infrastructure that benefits **all
-users and the broader community**. Furthermore, this threshold is
-designed so that **individual developers, small-scale projects, and
-the majority of our users are not asked to pay**, while seeking
-appropriate support from companies that derive significant value from
-our project.
+This support must not be intended to benefit any particular company,
+but must support maintaining the project as a shared infrastructure
+that **benefits all users and the broader community**. Furthermore,
+this threshold is designed so that **individual developers,
+small-scale projects, and the majority of our users are not asked to
+pay**, while seeking appropriate support from companies that derive
+significant value from our project.
 
 We understand that corporate procurement processes were not designed
 with FOSS sustainability in mind. We are committed to finding a
