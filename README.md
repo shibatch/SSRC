@@ -2,6 +2,8 @@
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/shibatch/SSRC)
 
+**You can watch introduction video at [https://youtu.be/AlRDaNACx3Y](https://youtu.be/AlRDaNACx3Y)**.
+
 **You can download Windows binaries from [Releases](https://github.com/shibatch/SSRC/releases) (under Assets)**.
 
 **If you have any thoughts or comments about this project, feel free to post them in [Discussions](https://github.com/shibatch/SSRC/discussions)**.
@@ -383,7 +385,7 @@ for FOSS.
 
 For details, please see our [Code of
 Conduct](https://github.com/shibatch/nofreelunch?tab=coc-ov-file) or
-its [introduction video](https://youtu.be/35zFfdCuBII). For reuse of
+its [introduction video](https://youtu.be/wsh2yKGwK4s). For reuse of
 this sustainability statement, see
 [SUSTAINABILITY.md](./SUSTAINABILITY.md).
 
